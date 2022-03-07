@@ -1,4 +1,5 @@
-﻿using BabyItems.Models;
+﻿using BabyItems.Core.Constants;
+using BabyItems.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,6 +16,8 @@ namespace BabyItems.Controllers
 
         public IActionResult Index()
         {
+            ViewData[MessageConstant.ErrorMessage] = "Something get wrong!";
+
             return View();
         }
 
