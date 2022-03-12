@@ -16,7 +16,7 @@ namespace BabyItems.Controllers
 
         public IActionResult Index()
         {
-            ViewData[MessageConstant.ErrorMessage] = "Something get wrong!";
+            ViewData[MessageConstant.SuccessMessage] = "Success!";
 
             return View();
         }
